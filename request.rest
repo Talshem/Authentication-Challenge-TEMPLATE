@@ -1,0 +1,11 @@
+
+POST http://localhost:3005/users/register
+Content-Type: application/json
+
+ {
+    "email": "sssssssss", 
+    "user": "password",
+    "password": "admin"
+}
+
+###
