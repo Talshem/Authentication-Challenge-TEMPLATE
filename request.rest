@@ -13,25 +13,9 @@ POST http://localhost:3005/users/login
 Content-Type: application/json
 
  {
-"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6eyJlbWFpbCI6InRhbCIsIm5hbWUiOiJwYXNzd29yZCIsInBhc3N3b3JkIjoiJDJiJDEwJEdhVFZEa0J2MzVRd08ydzdjVFVMTHVtVTd2TWh4N1FiQ2VGQlU4TjFwWFRZYzBKWTBWRjAyIiwiaXNBZG1pbiI6ZmFsc2V9LCJpYXQiOjE2MDE5OTk1ODd9.EEh9sKSLqidPrukDfmC4GhhgaBkX7BpALUhI5FAwPe8"
+    "user": "password",
+    "password": "admin"
 }
-
 ###
 
-POST http://localhost:3005/users/tokenValidate
-Content-Type: application/json
-
- {
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6eyJlbWFpbCI6InRhbCIsIm5hbWUiOiJwYXNzd29yZCIsInBhc3N3b3JkIjoiJDJiJDEwJEdhVFZEa0J2MzVRd08ydzdjVFVMTHVtVTd2TWh4N1FiQ2VGQlU4TjFwWFRZYzBKWTBWRjAyIiwiaXNBZG1pbiI6ZmFsc2V9LCJpYXQiOjE2MDE5OTk1ODd9.EEh9sKSLqidPrukDfmC4GhhgaBkX7BpALUhI5FAwPe8"
-}
-
-###
-
-POST http://localhost:3005/users/token
-Content-Type: application/json
-
- {
-"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6eyJlbWFpbCI6InRhbCIsIm5hbWUiOiJwYXNzd29yZCIsInBhc3N3b3JkIjoiJDJiJDEwJEdhVFZEa0J2MzVRd08ydzdjVFVMTHVtVTd2TWh4N1FiQ2VGQlU4TjFwWFRZYzBKWTBWRjAyIiwiaXNBZG1pbiI6ZmFsc2V9LCJpYXQiOjE2MDE5OTk1ODd9.EEh9sKSLqidPrukDfmC4GhhgaBkX7BpALUhI5FAwPe8"
-}
- ###
-
+GET http://localhost:3005/api/v1/information

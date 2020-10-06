@@ -1,7 +1,7 @@
 const app = require('./app');
 
 
-const PORT = process.env.PORT || 3005;
+const PORT = 8080;
 
 
 app.listen(PORT, () => {

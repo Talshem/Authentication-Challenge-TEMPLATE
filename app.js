@@ -1,10 +1,8 @@
 
 const express = require('express');
 const app = express();
-const { infoRouter } = require('./information')
 
 app.use(express.json());
-// app.use(express.static(__dirname + '/client/build'));
 
 
 const errorHandler = (error, request, response, next) => {
@@ -18,12 +16,11 @@ const errorHandler = (error, request, response, next) => {
 }
 
 app.use(errorHandler)
-app.use('/users/', require('./users'));
-app.use('/api/vi/', infoRouter);
+app.use('/', require('./api'));
 
 app.options('/', async (req, res) => {
+console.log(req)
 const { authorization } = req.headers; //Bearer {access token}
-console.log(req.headers)
 try {
 return res.status(200).json({x: req.headers, header: {Allow: "OPTIONS, GET, POST"}, body:'apis array'})
   } catch (err) { res.json(err)}

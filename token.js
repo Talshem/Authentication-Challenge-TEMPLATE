@@ -31,7 +31,4 @@ function verifyToken(token, option){
         })
 }}
 
-module.exports = {
-generateToken: generateToken,
-verifyToken: verifyToken
-}
+module.exports = { generateToken, verifyToken }
