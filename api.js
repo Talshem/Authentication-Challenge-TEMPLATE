@@ -66,7 +66,6 @@ router.post('/users/login', async (req, res) => {
 const { email, password } = req.body;
 try {
 let user = USERS.find(person => person.email === email)
-
 if(user) {
 bcrypt.compare(password, user.password, function (err, result) {
   if (err) return res.json(err)

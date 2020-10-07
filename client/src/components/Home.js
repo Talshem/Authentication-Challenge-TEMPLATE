@@ -101,7 +101,7 @@ function Home() {
                     <div className='userName' >Name:</div>
                     <div className='userEmail' >Info:</div>
                 </span>].concat(
-                    <span className='usersInfo' key={usersInformation.user + usersInformation.info} >
+                    <span className='usersInfo' key={usersInformation.name + usersInformation.info} >
                         <div className='userName' >{usersInformation.name}</div>
                         <div className='userEmail' >{usersInformation.info}</div>
                     </span>)}
